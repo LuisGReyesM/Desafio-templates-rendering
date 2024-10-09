@@ -164,7 +164,7 @@ form {
 .opacity-full {
   opacity: 1;
 }
-input, select, textarea{
+input, textarea{
   font-family: "Cooper Black"; 
 }
 </style>
