@@ -69,6 +69,12 @@
 
     <div 
       class="figura" 
+
+      :class="{
+        'opacity-low': tarjeta.checkOpaco,
+        'opacity-full': !tarjeta.checkOpaco
+      }"
+
       :style="{
         background: tarjeta.colorFondo,
         color: tarjeta.colorTexto,      
@@ -151,6 +157,13 @@ form {
   margin-top: 180px;
 }
 
+.opacity-low {
+  opacity: 0.5;
+}
+
+.opacity-full {
+  opacity: 1;
+}
 input, select, textarea{
   font-family: "Cooper Black"; 
 }
